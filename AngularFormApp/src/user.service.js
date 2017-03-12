@@ -7,11 +7,11 @@
 
         var details=[{
             id:0,
-            "firstName":"Sid",
-            "lastName":"gauti",
-            "email":"sid@gmail.com",
-            "city":"hyd",
-            "company":"marlabs"
+            'firstName':'Sid',
+            'lastName':'gauti',
+            'email':'sid@gmail.com',
+            'city':'hyd',
+            'company':'marlabs'
         }]
 
         this.update=function(detail){
@@ -20,7 +20,7 @@
                 details.push(detail);
             }else{
                 for(i in details){
-                    if(details[i]==detail.id){
+                    if(details[i].id==detail.id){
                         details[i]=detail;
                     }
                 }

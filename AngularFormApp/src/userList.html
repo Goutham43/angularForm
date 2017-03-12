@@ -1,4 +1,4 @@
-<table>
+<table class="table table-stripped" ng-controller="userListCntrl">
 	<thead>
 		<tr>
 			<th>FirstName</th>
@@ -9,12 +9,12 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
+		<tr ng-repeat="detail in details">
+			<td>{{detail.firstName}}</td>
+			<td>{{detail.lastName}}}</td>
+			<td>{{detail.email}}</td>
+			<td>{{detail.city}}</td>
+			<td>{{detail.company}}</td>
 		</tr>
 	</tbody>
 </table>

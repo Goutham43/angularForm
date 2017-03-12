@@ -1,6 +1,7 @@
 (function(){
-	angular.module('angApp')
-			.config('angConfig');
+	angular.module('angApp',['ngRoute'])
+			.config('angConfig')
+			.run();
 	angConfig.$inject=['$routeProvider'];
 
 	function angConfig($routeProvider){
@@ -14,5 +15,8 @@
 				templateUrl:'userList.html',
 				controller:'userListCntrl'
 			})
+	}
+	function run(){
+		console.log("Hi from run!!");
 	}		
 })();

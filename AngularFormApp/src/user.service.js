@@ -18,8 +18,25 @@
             if(detail.id==null){
                 detail.id=uid++;
                 details.push(detail);
+            }else{
+                for(i in details){
+                    if(details[i]==detail.id){
+                        details[i]=detail;
+                    }
+                }
             }
         }
 
+        this.get=function(id){
+            for(i in details){
+                if(details[i].id==id){
+                    return details[i];
+                }
+            }
+        }    
+
+        this.list=function(){
+            return details;
+        }
     }
 })();

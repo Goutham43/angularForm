@@ -7,12 +7,9 @@
 
         var details=[{
             id:0,
-            'firstName':'Sid',
-            'lastName':'gauti',
             'email':'sid@gmail.com',
-            'city':'hyd',
-            'company':'marlabs'
-        }]
+            'password':'password'
+        }];
 
         this.update=function(detail){
             if(detail.id==null){
